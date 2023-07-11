@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid black;
 }
 
 html, body{
@@ -17,12 +16,14 @@ body{
 h1 {
     animation: flicker 1.5s infinite alternate;     
     color: #fff;
+    font-size: 10vw;
     &::first-letter{
         text-transform: capitalize;
     }
 }
 h2{
     animation: flicker 1.5s infinite alternate;
+    font-size: 7vw;
     color: #fff;
 }
 
