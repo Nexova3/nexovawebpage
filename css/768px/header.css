@@ -1,0 +1,25 @@
+@import url(../general.css);
+
+/*requiere que cualquier campo abajo tenga una distancia de --header_px*/
+@media screen and (max-width:768px) {
+    
+    .custom-header{
+        height: var(--header-px);
+        width: 100%;
+        
+        
+    }
+    .custom-nav{
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .custom-nav>li>a{
+        color: var(--nav_text);
+    }
+    .custom-nav>li>a:hover{
+        color: var(--nav_text_hover);
+    }
+}

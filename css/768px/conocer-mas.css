@@ -1,0 +1,94 @@
+@import url(../general.css);
+
+@media screen and (max-width:768px) {
+    /* conoce-mas */
+    #conoce-mas{
+        height: 100vh;
+        
+        background-color: var(--conoce-mas-color);
+    
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .conoce-mas-title{
+        text-align: center;
+        top: 0;
+        left: 50%;
+        position: absolute;
+        font-size: calc((50vw)/10);
+        transform: translate(-50%,0);
+    }
+    .container-custom-conoce-mas-carousel{
+        height: 400px;
+        display: flex;
+
+        position: absolute;
+        max-width: 100vw;
+    }
+    .conoce-mas-carousel-slide{
+        flex: none;
+        width: 33vw;
+        position: relative;
+        transition-property: background-color;
+        transition-duration: 300ms;
+        
+    }
+    .conoce-mas-carousel-slide:hover{
+        background-color: rgba(125, 125, 125, 0.3);
+    }
+    .conoce-mas-carousel-slide .carousel-content{
+        z-index: 99;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .conoce-mas-carousel-slide .carousel-content:hover{
+        backdrop-filter: blur(5px);
+    }
+    .conoce-mas-carousel-slide .carousel-content h1, .conoce-mas-carousel-slide .carousel-content p{
+        display: none;
+        text-align: center;
+        padding: 15px;
+    }
+    .conoce-mas-carousel-slide:hover>.carousel-content>h1, .conoce-mas-carousel-slide:hover>.carousel-content>p{
+        display: block;
+    }
+
+    
+    .conoce-mas-carousel-slide span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 200px;
+    }
+    #conoce-mas button{
+        height: 400px;
+        background-color: transparent;
+        color: white;
+        width: 200px;
+        position: absolute;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 400ms;
+    }
+    #conoce-mas button:hover{
+        box-shadow: inset 0 0 15px white;
+        opacity: 1;
+    }
+    #conoce-mas .conoce-mas-right-button{
+        right: 0;
+        z-index: 100;
+    }
+    #conoce-mas .conoce-mas-left-button{
+        left: 0;
+        z-index: 100;
+    }
+
+}

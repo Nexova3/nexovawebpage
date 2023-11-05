@@ -1,0 +1,22 @@
+@import url(../general.css);
+
+/*requiere que cualquier campo abajo tenga una distancia de --header_px*/
+@media screen and (min-width: 1200px) {
+    .custom-container-footer{
+        
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 1317px;
+
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: center;
+    }
+    .custom-footer-logo-img{
+        width: 100px;
+        border-radius: 7px;
+    }
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inclusive+Sans&family=Kanit:wght@100;300&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+:root{
+    --body-color:#202430;
+    --conoce-mas-color: #3c3f50;
+    
+    --color-black1:#222;
+    --color-black2:#444;
+    --color-black3:#8c8c8c;
+
+    --color-weak1:#0bec92;
+    --color-weak2:#18d777;
+    --color-weak3:#67eeaa;
+
+    --h1_color:var(--p_color);
+    --h2_color:var(--p_color);
+    --h3_color:var(--p_color);
+
+    --p_color:white;
+
+    --nav_text:rgba(255,255,255,0.5);
+    --nav_text_hover:var(--color-strong1);
+    
+    --header-px: 100px;
+
+    font-family: Poppins;
+}   
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    color: var(--p_color);
+}
+h1{
+    color: var(--h1_color);
+}
+h2{
+    color: var(--h2_color);
+}
+h3{
+    color: var(--h3_color);
+}
+a{
+    color: var(--color-strong3);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--color-strong1);
+    cursor: pointer;
+}
+body{
+    background-color: var(--body-color);
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-black1);
+    border-radius: 10px;
+    border: 2px solid var(--body-color);
+}
+.hide{
+    display: none;
+}
+#show{
+    display: block;
+}
+
+.custom-nexova {
+    color: var(--color-weak1);
+}
+
+.label-text {
+    color: var(--p_color);
+}

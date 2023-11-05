@@ -1,0 +1,47 @@
+@import url(../general.css);
+
+/*requiere que cualquier campo abajo tenga una distancia de --header_px*/
+@media screen and (min-width: 1200px) {
+    .custom-menu-container{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .custom-branch-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .custom-logo-img{
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .custom-texto-logo{
+        font-size: 48px;
+    }
+    .custom-header-nav{
+        
+        display: flex;
+        width: 800px;
+        list-style-type: none;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .custom-header-nav li a{
+        background-color: var(--color-weak2);
+        /* width: 172px;
+        height: 58px; */
+        padding: 10px 43px 10px 43px;
+        border-radius: 10px;
+        height: 30px;
+        white-space: no-wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

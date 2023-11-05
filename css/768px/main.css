@@ -1,0 +1,34 @@
+@import url(../general.css);
+
+/*requiere que cualquier campo abajo tenga una distancia de --header_px*/
+@media screen and (max-width:768px) {
+    .custom-main-card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: calc(100vh - var(--header-px));
+
+        box-sizing: border-box;
+        margin: 0 100px 0 100px;
+        /* background-color: #111; */
+        border-radius: 7px;
+    }
+    .custom-main-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        padding: 10px;
+    }
+    .custom-main-right{
+        width: 50vw;
+    }
+    .custom-main-right::spelling-error{
+        text-decoration: underline wavy red;
+    }
+    img{
+        max-height: 75vh;
+        margin: auto;
+    }
+}
+
